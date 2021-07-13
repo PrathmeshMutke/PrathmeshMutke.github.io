@@ -538,7 +538,22 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-
+     <script>
+        var swiper = new Swiper('.blog-slider', {
+                observer: true,
+                observeParents: true,
+                spaceBetween: 30,
+                effect: 'fade',
+                loop: true,
+                mousewheel: {
+                invert: false,
+            },
+            pagination: {
+                el: '.blog-slider__pagination',
+                clickable: true,
+            }
+        });
+     </script>
 </body>
 
 </html>
